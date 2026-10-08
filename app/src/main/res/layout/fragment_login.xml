@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true"
+    tools:context=".LoginFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <LinearLayout
+        android:id="@+id/loginFragmentContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="24dp"
+        android:paddingBottom="24dp"
+        app:layout_constraintWidth_max="480dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.4">
+
+        <!--Logo-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/syncflow_logo"
+            android:contentDescription="@string/logo_description"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/subheading"
+            android:textColor="@color/olive"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+        <!--Firma Kodu-->
+        <TextView
+            style="@style/SyncFlowUI.Label"
+            android:text="@string/company_code"
+            android:layout_marginTop="30dp"
+            android:labelFor="@id/etCompanyCode"/>
+
+        <!--Firma Kodu Input-->
+       <com.google.android.material.textfield.TextInputLayout
+           android:id="@+id/CompanyCodeLayout"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           style="@style/SyncFlowUI.TextInput"
+           app:placeholderText="@string/company_code_example">
+
+           <com.google.android.material.textfield.TextInputEditText
+               android:id="@+id/etCompanyCode"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:inputType="text"
+               android:maxLines="1"
+               android:imeOptions="actionNext"
+               android:textColor="@color/text_dark"/>
+
+       </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Kurumsal EPosta Adresi-->
+
+        <TextView
+            style="@style/SyncFlowUI.Label"
+            android:text="@string/corporate_email"
+            android:labelFor="@id/etEmail"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etEmailLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:placeholderText="@string/email_example"
+            style="@style/SyncFlowUI.TextInput"
+            app:startIconDrawable="@drawable/ic_email"
+            app:startIconTint="@color/olive">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:imeOptions="actionNext"
+                android:autofillHints="emailAddress"
+                android:textColor="@color/text_dark" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Şifre-->
+        <TextView
+            style="@style/SyncFlowUI.Label"
+            android:text="@string/password"
+            android:labelFor="@id/etPassword"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etPasswordLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/SyncFlowUI.TextInput"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/olive">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textColor="@color/text_dark"
+                android:inputType="textPassword"
+                android:textSize="16sp"
+                android:imeOptions="actionDone"
+                android:autofillHints="password"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!--Giriş Butonu-->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/login"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/primary"
+            app:cornerRadius="12dp" />
+
+        <!--Şifremi Unuttum-->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/forgotPasswordNavBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/SyncFlowUI.TextButton"
+            android:text="@string/forgot_password"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="end"
+            android:textColor="@color/primary"/>
+
+        <!--Hesap Oluştur-->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/registerNavBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/SyncFlowUI.TextButton"
+            android:text="@string/create_account"
+            android:layout_gravity="end"/>
+
+    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -25,7 +25,7 @@
     <string name="password_again">Şifre Tekrar</string>
     <string name="next_departments">İleri</string>
     <string name="back">Geri</string>
-  
+
     <string name="step_three"> Adım 3: Departman ve Ekipler</string>
     <string name="step_three_description"> Departmanları ve altındaki ekipleri ekleyin (Örn: Tasarım Ekibinin altında :Art Direction, Grafik Tasarım, Metin Yazarlığı).</string>
     <string name="department_placeholder">Örn: Tasarım Departmanı</string>
@@ -35,4 +35,9 @@
     <string name="department_name">Departman Adı</string>
     <string name="add_new_department">Yeni Departman Ekle</string>
     <string name="teams_in_department">Bu Departmandaki Ekipler</string>
+
+
+    <string name="sync">Sync</string>
+    <string name="flow">Flow</string>
+    <string name="splash_description">Çalışma alanın, tek akışta</string>
 </resources>

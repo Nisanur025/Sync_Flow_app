@@ -115,7 +115,6 @@
     </style>
 
     <!--Kesikli Buton-->
-    <!--Kesikli Buton-->
     <style name="SyncFlowUI.Button.DashedAdd" parent="">
         <item name="android:background">@drawable/dashed_btn</item>
         <item name="android:textColor">@color/dark_green</item>
@@ -128,6 +127,15 @@
         <item name="android:drawableTint">@color/dark_green</item>
         <item name="android:clickable">true</item>
         <item name="android:focusable">true</item>
+    </style>
+
+
+    <style name="SyncFlowUI.Splash.Text" parent="">
+        <item name="android:textSize">36sp</item>
+        <item name="fontFamily">Serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
     </style>
 
 </resources>

@@ -112,7 +112,8 @@
             android:layout_height="wrap_content"
             style="@style/SyncFlowUI.TextInput"
             app:endIconMode="password_toggle"
-            app:endIconTint="@color/olive">
+            app:endIconTint="@color/olive"
+            app:errorIconDrawable="@null">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etPassword"

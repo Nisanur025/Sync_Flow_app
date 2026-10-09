@@ -61,6 +61,13 @@ class LoginFragment : Fragment() {
 
         }
 
+        // Hesap Oluştur Butonu
+        binding.registerNavBtn.setOnClickListener {
+            // Safe args ile register fragmenta git
+            val action = LoginFragmentDirections.actionLoginFragmentToRegisterFragment()
+            findNavController().navigate(action)
+        }
+
     }
 
     // EditTexte Tıklayınca Error Mesajını silme

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".RegisterStepTwoFragment"
+    android:fillViewport="true"
+    android:background="@color/background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/registerFragmentContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="24dp"
+        android:paddingBottom="24dp"
+        app:layout_constraintWidth_max="480dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.4">
+
+        <!--Logo-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/syncflow_title"
+            android:layout_marginBottom="20dp"
+            android:contentDescription="@string/logo_description" />
+
+        <!--Adım 2-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/step_two"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="@color/light_grey"/>
+
+        <!--Yönetici Adı Soyadı-->
+        <TextView
+            android:text="@string/manager_name_surname_tv"
+            style="@style/SyncFlowUI.Label"
+            android:labelFor="@id/et_managerNameSurname"/>
+
+        <!--Yönetici EditText-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/managerNameSurnameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/SyncFlowUI.TextInput">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_managerNameSurname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Eposta-->
+        <TextView
+            android:text="@string/company_email"
+            style="@style/SyncFlowUI.Label"
+            android:labelFor="@id/et_email"/>
+
+        <!--eposta editText-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_emailLayout"
+            style="@style/SyncFlowUI.TextInput"
+            app:placeholderText="@string/email_example">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Şifre-->
+        <TextView
+            android:text="@string/password_atleast8"
+            style="@style/SyncFlowUI.Label"
+            android:labelFor="@id/password_eight"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/SyncFlowUI.TextInput"
+            android:id="@+id/password_eight_label"
+            app:endIconMode="password_toggle">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/password_eight"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!--Şifre Tekrar-->
+        <TextView
+            android:text="@string/password_again"
+            style="@style/SyncFlowUI.Label"
+            android:labelFor="@id/password_again"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/SyncFlowUI.TextInput"
+            android:id="@+id/password_again_label"
+            app:endIconMode="password_toggle">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/password_again"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Çizgiler-->
+        <LinearLayout style="@style/StepIndicator.Container">
+
+            <View style="@style/StepIndicator.Bar.Inactive" />
+            <View style="@style/StepIndicator.Bar.Active" />
+            <View
+                style="@style/StepIndicator.Bar.Inactive"
+                android:layout_marginEnd="0dp" />
+
+        </LinearLayout>
+
+
+        <!--Butonlar-->
+        <LinearLayout
+            android:id="@+id/buttonContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp">
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Button.Primary.Back"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="20dp"
+                android:text="@string/back" />
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Button.Primary.Next"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/next_departments" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -10,5 +10,21 @@
     <string name="forgot_password">Şifremi unuttum</string>
     <string name="create_account">Hesap Oluştur</string>
     <string name="subheading">Çalışma Alanı Girişi</string>
-    
+
+    <string name="step_one">Adım 1: Kurulum Bilgileri</string>
+    <string name="company_name">Firma/Ajans Adı</string>
+    <string name="company_name_example">Örn: Pixel Reklam Ajansı</string>
+    <string name="sector_name">Sektör</string>
+    <string name="btn_register_stepOne">İleri: Yönetici Hesabı</string>
+
+    <string name="step_two">Adım 2: Yönetici Hesabı</string>
+    <string name="manager_name_surname_tv">Yönetici Adı Soyadı</string>
+    <string name="company_email">Kurumsal E-Posta</string>
+
+    <string name="password_atleast8">Şifre (En az 8 karakter)</string>
+    <string name="password_again">Şifre Tekrar</string>
+    <string name="next_departments">İleri</string>
+    <string name="back">Geri</string>
+
+
 </resources>

@@ -41,4 +41,63 @@
         <item name="android:textSize">16sp</item>
         <item name="android:textColor">@color/primary</item>
     </style>
+
+    <!-- Tüm ana butonların ortak görünümü -->
+    <style name="Button.Primary" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/primary</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:padding">15dp</item>
+        <item name="iconPadding">8dp</item>
+    </style>
+
+    <!-- Sağında ikon olan "İleri" butonu -->
+    <style name="Button.Primary.Next">
+        <item name="icon">@drawable/ic_right_chevron</item>
+        <item name="iconGravity">textEnd</item>
+        <item name="iconTint">@color/beige</item>
+    </style>
+
+    <!-- Solunda ikon olan "Geri" butonu -->
+    <style name="Button.Primary.Back">
+        <item name="icon">@drawable/ic_left_chevron</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconTint">@color/beige</item>
+    </style>
+
+    <style name="StepIndicator" />
+    <!-- Çizgilerin bulunduğu kap -->
+    <style name="StepIndicator.Container">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">100dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+    </style>
+
+    <!-- Ortak özellikler: yükseklik ve aralık -->
+    <style name="StepIndicator.Bar">
+        <item name="android:layout_height">10dp</item>
+        <item name="android:layout_marginEnd">6dp</item>
+    </style>
+
+    <!-- Aktif adım -->
+    <style name="StepIndicator.Bar.Active">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:background">@drawable/step_active</item>
+    </style>
+
+    <!-- Pasif adım -->
+    <style name="StepIndicator.Bar.Inactive">
+        <item name="android:layout_width">25dp</item>
+        <item name="android:background">@drawable/step_inactive</item>
+    </style>
+
+
+
 </resources>

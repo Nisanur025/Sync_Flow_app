@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/registerStepTwoFragment">
+    app:startDestination="@id/registerStepThreeFragment">
 
     <fragment
         android:id="@+id/loginFragment"
@@ -33,5 +33,14 @@
         android:id="@+id/registerStepTwoFragment"
         android:name="com.example.syncflow.RegisterStepTwoFragment"
         android:label="fragment_register_step_two"
-        tools:layout="@layout/fragment_register_step_two" />
+        tools:layout="@layout/fragment_register_step_two" >
+        <action
+            android:id="@+id/action_registerStepTwoFragment_to_registerStepThreeFragment"
+            app:destination="@id/registerStepThreeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerStepThreeFragment"
+        android:name="com.example.syncflow.RegisterStepThreeFragment"
+        android:label="fragment_register_step_three"
+        tools:layout="@layout/fragment_register_step_three" />
 </navigation>

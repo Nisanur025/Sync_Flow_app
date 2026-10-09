@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="0dp"
+    app:strokeColor="@color/input_stroke"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            style="@style/SyncFlowUI.Label"
+            android:layout_marginTop="0dp"
+            android:text="@string/department_name"
+            android:labelFor="@id/etDepartmentName" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <!--Departman Adı Input -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/SyncFlowUI.TextInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:placeholderText="@string/department_placeholder">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDepartmentName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapWords" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--Çarpı Butonu-->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRemoveDepartment"
+                style="@style/SyncFlowUI.Button.Delete"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="12dp"
+                android:contentDescription="@string/remove" />
+        </LinearLayout>
+
+
+        <TextView
+            style="@style/SyncFlowUI.Label"
+            android:layout_marginTop="16dp"
+            android:text="@string/teams_in_department" />
+
+        <!--Eklenecek Yeni Ekip Yeri-->
+        <LinearLayout
+            android:id="@+id/teamContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+        <!--Yeni Ekip Ekle Buton-->
+        <TextView
+            android:id="@+id/btnAddTeam"
+            style="@style/SyncFlowUI.Button.DashedAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/add_new_team" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

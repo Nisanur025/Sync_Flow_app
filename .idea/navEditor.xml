@@ -50,7 +50,24 @@
                                 <LayoutPositions />
                               </value>
                             </entry>
+                            <entry key="action_registerFragment_to_registerStepTwoFragment3">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
                           </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="registerStepThreeFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="686" />
+                            <option name="y" value="17" />
+                          </Point>
                         </option>
                       </LayoutPositions>
                     </value>

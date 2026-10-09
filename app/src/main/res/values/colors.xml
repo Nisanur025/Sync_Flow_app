@@ -9,4 +9,7 @@
     <color name="beige">#D7CCBC</color>
     <color name="text_dark">#3A3A33</color>
     <color name="light_grey">#6C6C6B</color>
+    <color name="red">#9C1313</color>
+    <color name="dark_green">#4A5340</color>
+    <color name="transparent">#00C4CAF0</color>
 </resources>
